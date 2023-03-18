@@ -93,11 +93,7 @@ export const HomePage = () => {
   const onClickToggleModal = useCallback(() => {
     setOpenModal(!isOpenModal);
   }, [isOpenModal]);
-
-  useEffect(() => {
-    console.log(localStorage.getItem(LOCALSTORAGE_TOKEN))
-  })
-
+  
   const horizontalScrollRef = useRef<HTMLInputElement>(null);
   const main6ScrollRef = useRef<HTMLInputElement>(null);
 
